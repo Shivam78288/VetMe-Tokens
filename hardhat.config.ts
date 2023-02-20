@@ -125,8 +125,9 @@ function getChainConfig(network: keyof typeof chainIds): NetworkUserConfig {
     accounts: [`${process.env.PRIVATE_KEY}`],
     chainId: chainIds[network],
     url,
-    // gasPrice: network == "bsc" ? 20000000000 : 200000000000,
-    // gasPrice: 450_000_000_000
+    // gas: 1000000,
+    // // gasPrice: network == "bsc" ? 20000000000 : 200000000000,
+    // gasPrice: 50_000_000_000,
   };
 }
 
@@ -224,7 +225,7 @@ const config = {
     // imports: "./imports",
   },
   solidity: {
-    version: "0.8.9",
+    version: "0.8.17",
     settings: {
       evmVersion: "berlin",
       metadata: {
@@ -257,14 +258,14 @@ const config = {
       avalanche: "QAE2JD7XIBCYB6Z6GSKNJIHKZ8XGVYM8AI",
 
       opera: process.env.FTMSCAN_KEY,
-      arbitrumOne: process.env.ARBITRUM_KEY,
+      arbitrumOne: process.env.ARBISCAN_API_KEY,
       optimisticEthereum: process.env.OPTIMISM_KEY,
-      mainnet: process.env.ETH_ETHERSCAN_KEY,
+      mainnet: process.env.ETHERSCAN_API_KEY,
       aurora: process.env.AURORA_KEY,
       harmony: process.env.HARMONY_KEY,
       moonbeam: process.env.MOONBEAM_ETHERSCAN_KEY,
       kava: process.env.MOONBEAM_ETHERSCAN_KEY,
-      goerli: process.env.MAINNET_ETHERSCAN_KEY,
+      goerli: process.env.ETHERSCAN_API_KEY,
       avalancheFujiTestnet: "QAE2JD7XIBCYB6Z6GSKNJIHKZ8XGVYM8AI",
     },
 

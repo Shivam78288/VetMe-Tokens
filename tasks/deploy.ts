@@ -1,11 +1,62 @@
 import { task } from "hardhat/config";
-import { HardhatRuntimeEnvironment, TaskArguments } from "hardhat/types";
+import fs from "fs";
 
-task("deploy:Lock", "deploys lock contract").setAction(async function (
-  taskArgs: TaskArguments,
-  hre: HardhatRuntimeEnvironment
-) {
-  const factory = await hre.ethers.getContractFactory("Lock");
-  const contract = await factory.deploy("1000000000000");
-  console.log(contract.address);
-});
+task("Deploy:Arbitrum", "Deploys the project").setAction(
+  async (_, hre): Promise<null> => {
+    const deployment = require("../deployments/deployments.json");
+
+    const network = await hre.ethers.provider.getNetwork();
+    const chainId = network.chainId;
+
+    const handler = deployment[chainId].handler;
+    const feeToken = deployment[chainId].feeToken;
+
+    const Contract = await hre.ethers.getContractFactory("VetMe");
+
+    const contract = await hre.upgrades.deployProxy(Contract, [
+      handler,
+      feeToken,
+    ]);
+    await contract.deployed();
+    console.log(`contract deployed to: `, contract.address);
+
+    deployment[chainId].contract = contract.address;
+
+    fs.writeFileSync(
+      "deployments/deployments.json",
+      JSON.stringify(deployment)
+    );
+
+    return null;
+  }
+);
+
+task("Deploy:Ethereum", "Deploys the project").setAction(
+  async (_, hre): Promise<null> => {
+    const deployment = require("../deployments/deployments.json");
+
+    const network = await hre.ethers.provider.getNetwork();
+    const chainId = network.chainId;
+
+    const handler = deployment[chainId].handler;
+    const feeToken = deployment[chainId].feeToken;
+
+    const Contract = await hre.ethers.getContractFactory("VetMeEthAdapter");
+
+    const contract = await hre.upgrades.deployProxy(Contract, [
+      handler,
+      feeToken,
+    ]);
+    await contract.deployed();
+    console.log(`contract deployed to: `, contract.address);
+
+    deployment[chainId].contract = contract.address;
+
+    fs.writeFileSync(
+      "deployments/deployments.json",
+      JSON.stringify(deployment)
+    );
+
+    return null;
+  }
+);
