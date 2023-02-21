@@ -453,6 +453,464 @@
           }
         }
       }
+    },
+    "6174b66d000dab1a8e07bddb46666fdbf83e0239eb1bf6f492817509eb6e04b4": {
+      "address": "0xa170b6533C5b7B84B039F24EeA292664247dFc5B",
+      "txHash": "0xbb70e51e169b933b5c00d3db8a39b4c4f1df5684ccca948a163ae43115af4c78",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "_owner",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_address",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:22"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "52",
+            "type": "t_array(t_uint256)49_storage",
+            "contract": "OwnableUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\access\\OwnableUpgradeable.sol:94"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "201",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "handler",
+            "offset": 0,
+            "slot": "251",
+            "type": "t_contract(iGenericHandler)2559",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:21"
+          },
+          {
+            "label": "linkSetter",
+            "offset": 0,
+            "slot": "252",
+            "type": "t_address",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:23"
+          },
+          {
+            "label": "feeToken",
+            "offset": 0,
+            "slot": "253",
+            "type": "t_address",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:25"
+          },
+          {
+            "label": "Chain2Addr",
+            "offset": 0,
+            "slot": "254",
+            "type": "t_mapping(t_uint8,t_address)",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:27"
+          },
+          {
+            "label": "executes",
+            "offset": 0,
+            "slot": "255",
+            "type": "t_mapping(t_bytes32,t_struct(ExecutesStruct)2570_storage)",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "256",
+            "type": "t_array(t_uint256)100_storage",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:254"
+          },
+          {
+            "label": "_rOwned",
+            "offset": 0,
+            "slot": "356",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:27"
+          },
+          {
+            "label": "_tOwned",
+            "offset": 0,
+            "slot": "357",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:28"
+          },
+          {
+            "label": "_allowances",
+            "offset": 0,
+            "slot": "358",
+            "type": "t_mapping(t_address,t_mapping(t_address,t_uint256))",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:29"
+          },
+          {
+            "label": "_isExcludedFromFee",
+            "offset": 0,
+            "slot": "359",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:30"
+          },
+          {
+            "label": "_rTotal",
+            "offset": 0,
+            "slot": "360",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:33"
+          },
+          {
+            "label": "_currentSupply",
+            "offset": 0,
+            "slot": "361",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:34"
+          },
+          {
+            "label": "_tFeeTotal",
+            "offset": 0,
+            "slot": "362",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:35"
+          },
+          {
+            "label": "_redisFeeOnBuy",
+            "offset": 0,
+            "slot": "363",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:36"
+          },
+          {
+            "label": "_taxFeeOnBuy",
+            "offset": 0,
+            "slot": "364",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:37"
+          },
+          {
+            "label": "_redisFeeOnSell",
+            "offset": 0,
+            "slot": "365",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:38"
+          },
+          {
+            "label": "_taxFeeOnSell",
+            "offset": 0,
+            "slot": "366",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:39"
+          },
+          {
+            "label": "_redisFee",
+            "offset": 0,
+            "slot": "367",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:42"
+          },
+          {
+            "label": "_taxFee",
+            "offset": 0,
+            "slot": "368",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:43"
+          },
+          {
+            "label": "_previousredisFee",
+            "offset": 0,
+            "slot": "369",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:45"
+          },
+          {
+            "label": "_previoustaxFee",
+            "offset": 0,
+            "slot": "370",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:46"
+          },
+          {
+            "label": "bots",
+            "offset": 0,
+            "slot": "371",
+            "type": "t_mapping(t_address,t_bool)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:48"
+          },
+          {
+            "label": "_buyMap",
+            "offset": 0,
+            "slot": "372",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:49"
+          },
+          {
+            "label": "_developmentAddress",
+            "offset": 0,
+            "slot": "373",
+            "type": "t_address_payable",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:50"
+          },
+          {
+            "label": "_marketingAddress",
+            "offset": 0,
+            "slot": "374",
+            "type": "t_address_payable",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:51"
+          },
+          {
+            "label": "uniswapV2Router",
+            "offset": 0,
+            "slot": "375",
+            "type": "t_contract(IUniswapV2Router02)2734",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:52"
+          },
+          {
+            "label": "uniswapV2Pair",
+            "offset": 0,
+            "slot": "376",
+            "type": "t_address",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:53"
+          },
+          {
+            "label": "tradingOpen",
+            "offset": 20,
+            "slot": "376",
+            "type": "t_bool",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:55"
+          },
+          {
+            "label": "inSwap",
+            "offset": 21,
+            "slot": "376",
+            "type": "t_bool",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:56"
+          },
+          {
+            "label": "swapEnabled",
+            "offset": 22,
+            "slot": "376",
+            "type": "t_bool",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:57"
+          },
+          {
+            "label": "_maxTxAmount",
+            "offset": 0,
+            "slot": "377",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:59"
+          },
+          {
+            "label": "_maxWalletSize",
+            "offset": 0,
+            "slot": "378",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:60"
+          },
+          {
+            "label": "_swapTokensAtAmount",
+            "offset": 0,
+            "slot": "379",
+            "type": "t_uint256",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:61"
+          },
+          {
+            "label": "nonce",
+            "offset": 0,
+            "slot": "380",
+            "type": "t_uint64",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:63"
+          },
+          {
+            "label": "nonceToHash",
+            "offset": 0,
+            "slot": "381",
+            "type": "t_mapping(t_uint64,t_bytes32)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:64"
+          },
+          {
+            "label": "feesForCrossChainTx",
+            "offset": 0,
+            "slot": "382",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "contract": "VetMe",
+            "src": "contracts\\VetMeCrossChain.sol:65"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_address_payable": {
+            "label": "address payable",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)100_storage": {
+            "label": "uint256[100]",
+            "numberOfBytes": "3200"
+          },
+          "t_array(t_uint256)49_storage": {
+            "label": "uint256[49]",
+            "numberOfBytes": "1568"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(IUniswapV2Router02)2734": {
+            "label": "contract IUniswapV2Router02",
+            "numberOfBytes": "20"
+          },
+          "t_contract(iGenericHandler)2559": {
+            "label": "contract iGenericHandler",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_bool)": {
+            "label": "mapping(address => bool)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_address,t_uint256))": {
+            "label": "mapping(address => mapping(address => uint256))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_bytes32,t_struct(ExecutesStruct)2570_storage)": {
+            "label": "mapping(bytes32 => struct iRouterCrossTalkUpgradeable.ExecutesStruct)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint64,t_bytes32)": {
+            "label": "mapping(uint64 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint8,t_address)": {
+            "label": "mapping(uint8 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ExecutesStruct)2570_storage": {
+            "label": "struct iRouterCrossTalkUpgradeable.ExecutesStruct",
+            "members": [
+              {
+                "label": "chainID",
+                "type": "t_uint8",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "nonce",
+                "type": "t_uint64",
+                "offset": 1,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
     }
   }
 }

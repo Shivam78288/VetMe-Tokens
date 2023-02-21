@@ -62,6 +62,7 @@ contract VetMe is
 
     uint64 public nonce;
     mapping(uint64 => bytes32) public nonceToHash;
+    mapping(uint8 => uint256) public feesForCrossChainTx;
 
     event TxCreated(uint64 indexed nonce, uint256 amount);
     event MaxTxAmountUpdated(uint256 _maxTxAmount);
@@ -563,6 +564,13 @@ contract VetMe is
         }
     }
 
+    function setFeesForCrossChainTx(uint8 destChainId, uint256 amount)
+        external
+        onlyOwner
+    {
+        feesForCrossChainTx[destChainId] = amount;
+    }
+
     /// @notice Function to be called to send VetMe tokens to the other chain
     /// @param  _chainID ChainId of the destination chain(router specs)
     /// @param  _amount Amount of tokens to be transferred to the destination chain
@@ -575,7 +583,11 @@ contract VetMe is
         address _recipient,
         uint256 _amount,
         uint256 _crossChainGasPrice
-    ) external returns (bool) {
+    ) external payable returns (bool) {
+        require(_amount > 0, "amount = 0");
+        require(msg.value >= feesForCrossChainTx[_chainID], "fees too low");
+        require(balanceOf(msg.sender) >= _amount, "insufficient balance");
+
         nonce = nonce + 1;
         bytes memory _data = abi.encode(_recipient, _amount);
 
@@ -639,5 +651,9 @@ contract VetMe is
         address feeToken = this.fetchFeeToken();
         uint256 amount = IERC20Upgradeable(feeToken).balanceOf(address(this));
         IERC20Upgradeable(feeToken).transfer(msg.sender, amount);
+    }
+
+    function withdrawNative(address payable recipient) external onlyOwner {
+        recipient.transfer(address(this).balance);
     }
 }

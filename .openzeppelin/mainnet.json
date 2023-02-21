@@ -265,6 +265,204 @@
             "label": "handler",
             "offset": 0,
             "slot": "201",
+            "type": "t_contract(iGenericHandler)2115",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:21"
+          },
+          {
+            "label": "linkSetter",
+            "offset": 0,
+            "slot": "202",
+            "type": "t_address",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:23"
+          },
+          {
+            "label": "feeToken",
+            "offset": 0,
+            "slot": "203",
+            "type": "t_address",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:25"
+          },
+          {
+            "label": "Chain2Addr",
+            "offset": 0,
+            "slot": "204",
+            "type": "t_mapping(t_uint8,t_address)",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:27"
+          },
+          {
+            "label": "executes",
+            "offset": 0,
+            "slot": "205",
+            "type": "t_mapping(t_bytes32,t_struct(ExecutesStruct)2126_storage)",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:29"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "206",
+            "type": "t_array(t_uint256)100_storage",
+            "contract": "RouterCrossTalkUpgradeable",
+            "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:254"
+          },
+          {
+            "label": "owner",
+            "offset": 0,
+            "slot": "306",
+            "type": "t_address",
+            "contract": "VetMeEthAdapter",
+            "src": "contracts\\VetMeEthAdapter.sol:18"
+          },
+          {
+            "label": "nonce",
+            "offset": 20,
+            "slot": "306",
+            "type": "t_uint64",
+            "contract": "VetMeEthAdapter",
+            "src": "contracts\\VetMeEthAdapter.sol:20"
+          },
+          {
+            "label": "nonceToHash",
+            "offset": 0,
+            "slot": "307",
+            "type": "t_mapping(t_uint64,t_bytes32)",
+            "contract": "VetMeEthAdapter",
+            "src": "contracts\\VetMeEthAdapter.sol:21"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_array(t_uint256)100_storage": {
+            "label": "uint256[100]",
+            "numberOfBytes": "3200"
+          },
+          "t_array(t_uint256)50_storage": {
+            "label": "uint256[50]",
+            "numberOfBytes": "1600"
+          },
+          "t_bool": {
+            "label": "bool",
+            "numberOfBytes": "1"
+          },
+          "t_bytes32": {
+            "label": "bytes32",
+            "numberOfBytes": "32"
+          },
+          "t_contract(iGenericHandler)2115": {
+            "label": "contract iGenericHandler",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_bytes32,t_struct(ExecutesStruct)2126_storage)": {
+            "label": "mapping(bytes32 => struct iRouterCrossTalkUpgradeable.ExecutesStruct)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint64,t_bytes32)": {
+            "label": "mapping(uint64 => bytes32)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint8,t_address)": {
+            "label": "mapping(uint8 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_struct(ExecutesStruct)2126_storage": {
+            "label": "struct iRouterCrossTalkUpgradeable.ExecutesStruct",
+            "members": [
+              {
+                "label": "chainID",
+                "type": "t_uint8",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "nonce",
+                "type": "t_uint64",
+                "offset": 1,
+                "slot": "0"
+              }
+            ],
+            "numberOfBytes": "32"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          },
+          "t_uint64": {
+            "label": "uint64",
+            "numberOfBytes": "8"
+          },
+          "t_uint8": {
+            "label": "uint8",
+            "numberOfBytes": "1"
+          }
+        }
+      }
+    },
+    "6a5f8607997a88d7b5edf714e111953bd4333ccb9a27d81247380344511693ad": {
+      "address": "0x28bA04519E7f9d90FcC2b2f169FDC3b2bf0ba264",
+      "txHash": "0x62d7ad9971940cf21d904f5b4df4a5f3facb464999879ad9c2767233e7fe8578",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "_initialized",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_uint8",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:62",
+            "retypedFrom": "bool"
+          },
+          {
+            "label": "_initializing",
+            "offset": 1,
+            "slot": "0",
+            "type": "t_bool",
+            "contract": "Initializable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\Initializable.sol:67"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC1967UpgradeUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\ERC1967\\ERC1967UpgradeUpgradeable.sol:211"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "51",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "UUPSUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\proxy\\utils\\UUPSUpgradeable.sol:107"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "101",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ContextUpgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\ContextUpgradeable.sol:36"
+          },
+          {
+            "label": "__gap",
+            "offset": 0,
+            "slot": "151",
+            "type": "t_array(t_uint256)50_storage",
+            "contract": "ERC165Upgradeable",
+            "src": "@openzeppelin\\contracts-upgradeable\\utils\\introspection\\ERC165Upgradeable.sol:41"
+          },
+          {
+            "label": "handler",
+            "offset": 0,
+            "slot": "201",
             "type": "t_contract(iGenericHandler)2559",
             "contract": "RouterCrossTalkUpgradeable",
             "src": "@routerprotocol\\router-crosstalk\\contracts\\RouterCrossTalkUpgradeable.sol:21"
@@ -332,6 +530,14 @@
             "type": "t_mapping(t_uint64,t_bytes32)",
             "contract": "VetMeEthAdapter",
             "src": "contracts\\VetMeEthAdapter.sol:21"
+          },
+          {
+            "label": "feesForCrossChainTx",
+            "offset": 0,
+            "slot": "308",
+            "type": "t_mapping(t_uint8,t_uint256)",
+            "contract": "VetMeEthAdapter",
+            "src": "contracts\\VetMeEthAdapter.sol:22"
           }
         ],
         "types": {
@@ -369,6 +575,10 @@
           },
           "t_mapping(t_uint8,t_address)": {
             "label": "mapping(uint8 => address)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint8,t_uint256)": {
+            "label": "mapping(uint8 => uint256)",
             "numberOfBytes": "32"
           },
           "t_struct(ExecutesStruct)2570_storage": {
